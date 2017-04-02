@@ -10,8 +10,8 @@ namespace MathLibraryCsharp
     {
         static void Main(string[] args)
         {
-            testVectorProduct();
-            //testMatrixMultiplication();
+            //testVectorProduct();
+            testMatrixMultiplication();
             Console.Read();
         }
         public static void testMatrixMultiplication()

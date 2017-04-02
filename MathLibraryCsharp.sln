@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLibraryCsharp", "MathLibraryJava\MathLibraryCsharp.csproj", "{582CCC4D-2F10-448B-8643-7D900BA88246}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLibraryCsharp", "MathLibraryCsharp\MathLibraryCsharp.csproj", "{582CCC4D-2F10-448B-8643-7D900BA88246}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gwcMathLibrary", "gwcMathLibrary\gwcMathLibrary.csproj", "{8D41F134-1181-4A75-9119-6CCCF4D12706}"
 EndProject
