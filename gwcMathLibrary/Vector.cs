@@ -32,8 +32,8 @@ namespace gwcMathLibrary
         {
             double add = 0;
             foreach (double uv in unitVectors)
-                add += Math.Pow(uv, 2);
-            return Math.Sqrt(add);
+                add += System.Math.Pow(uv, 2);
+            return System.Math.Sqrt(add);
         }
         public override String ToString()
         {

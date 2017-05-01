@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using gwcMathLibrary;
+using System.Diagnostics;
+
 namespace MathLibraryCsharp
 {
     class Program
@@ -11,8 +13,25 @@ namespace MathLibraryCsharp
         static void Main(string[] args)
         {
             //testVectorProduct();
-            testMatrixMultiplication();
+            //testMatrixMultiplication();
+            testPrimes();
             Console.Read();
+        }
+        public static void testPrimes()
+        {
+            gwcMathLibrary.Math.Prime primeGenerator = new gwcMathLibrary.Math.Prime();
+
+            /*foreach(Int64 i in primeGenerator.calcPrimesUpTo(100000000))
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine(primeGenerator.calculateNextPrime(234));*/
+            Stopwatch test = new Stopwatch();
+            test.Start();
+            primeGenerator.calcPrimesUpTo(1000000);
+            test.Stop();
+            Console.WriteLine(test.Elapsed.TotalMilliseconds);
+
         }
         public static void testMatrixMultiplication()
         {
@@ -47,8 +66,8 @@ namespace MathLibraryCsharp
         public static void testVectorProduct()
         {
             int cnt = 1;
-            Vector vector1 = new Vector(5, -5, 3);
-            Vector vector2 = new Vector(1, -6.5, 5);
+            Vector vector1 = new Vector(0, 0, .6 * Math.Pow(10,-3));
+            Vector vector2 = new Vector(2, 2, 0);
 
             Console.WriteLine(vector1.crossProduct(vector2));
         }
